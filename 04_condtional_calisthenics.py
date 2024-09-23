@@ -85,3 +85,5 @@ elif (Side_A == Side_B and Side_B != Side_C) or (Side_A != Side_B and Side_B == 
     print ("This is an Isocsceles Triangle")
 elif ((Side_A != Side_B and Side_B != Side_C) and (Side_A + Side_B > Side_C) or (Side_A + Side_C > Side_B) or (Side_B + Side_C > Side_A)):
     print ("This is a Scaline Triangle")
+else:
+    print("Not a Triangle")
