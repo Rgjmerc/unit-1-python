@@ -40,11 +40,11 @@ print (factorial)
 Create a simple password guessing game using a while loop. Ask the user to guess a predefined password and provide appropriate feedback.
 """
 
-pswd_attempt=input("Enter a password attempt ").lower
+pswd_attempt=input("Enter a password attempt: ").lower
 password = "password"
 while pswd_attempt != password:
     print ("Incorrect Password")
-    pswd_attempt=input("Enter a password attempt ")
+    pswd_attempt=input("Enter a password attempt: ")
     #loops attempts until correct
 else:
     print("Correct Password")
