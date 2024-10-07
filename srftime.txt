@@ -1,0 +1,6 @@
+09/01/17
+%m/%d/%y
+Sep 01, 2017
+%b %d, %Y
+Friday, September 01
+%A, %B %d
