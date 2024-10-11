@@ -1,6 +1,6 @@
 from datetime import date
-from datetime import datetime
 from datetime import time
+from datetime import datetime
 """
 Exercise 1:
 Write a Python program that prints the current date and time using the datetime module.
@@ -24,6 +24,14 @@ Exercise 3:
 Using the strptime function, convert two strings into dates.
 Then find the difference in days between the two.
 """
+
+d1 = "06/28/1919"
+d2 = "09/01/1939"
+d1 = datetime.strptime(d1, "%m/%d/%Y")
+d2 = datetime.strptime(d2, "%m/%d/%Y")
+print(d1)
+print(d2)
+print(d2 - d1)
 
 """
 Excercise 4:
