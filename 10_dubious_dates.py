@@ -8,6 +8,7 @@ Write a Python program that prints the current date and time using the datetime 
 
 my_dt = datetime.now()
 print(my_dt)
+#today's date and time
 
 """
 Exercise 2:
@@ -18,6 +19,7 @@ Using the strftime function format the date in standard U.S. date format (MM/DD/
 my_date = date.today()
 my_string = my_date.strftime("%m/%d/%Y")
 print(my_string)
+#todays date in a specific format
 
 """
 Exercise 3:
@@ -32,10 +34,18 @@ d2 = datetime.strptime(d2, "%m/%d/%Y")
 print(d1)
 print(d2)
 print(d2 - d1)
+#the difference between 2 dates in a mm/dd/yyyy format
 
 """
 Excercise 4:
 Write a program that asks the user for their birthdate and calculates their current 
 age using the datetime module.
 """
-
+print("Please enter your birthdate in mm/dd/yyyy format.")
+bday = input()
+bday = datetime.strptime(bday, "%m/%d/%Y")
+#converts input into a datetime input
+today = date.today
+age = ((today - bday)/365)
+#calculations
+print("You are " + str(age) + " years old.")
