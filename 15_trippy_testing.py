@@ -18,7 +18,7 @@ def divide(a, b):
     return a / b
 
 assert divide(2,1) == 2
-assert divide(2,0) == None
+assert divide(2,0) == None #testing for functioning divider
 
 """
 Exercise 2: Factorial
@@ -38,7 +38,7 @@ def factorial(n):
   else:
     return n * factorial(n - 1)
 assert factorial(0) == 1
-assert factorial(10) == 3628800
+assert factorial(10) == 3628800 #testing for working factorial calculator
 
 """
 Exercise 3: String Reverse
@@ -58,7 +58,7 @@ def reverse_string(string):
     reversed_string = char + reversed_string
   return reversed_string
 
-assert reverse_string("hello world") == "dlrow olleh"
+assert reverse_string("hello world") == "dlrow olleh" #testign for a working string reversal
 
 """
 Exercise 4: Fibonacci
@@ -79,7 +79,7 @@ def fibonacci(n):
     return 1
   else:
     return fibonacci(n - 1) + fibonacci(n - 2)
-assert fibonacci(0) == 0
+assert fibonacci(0) == 0 #testing for the functioning Fibonacci sequence
 assert fibonacci(1) == 1
 assert fibonacci(8) == 21
 
@@ -100,5 +100,5 @@ def is_valid_email(email):
   """
   email_regex = r"^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+"
   return re.match(email_regex, email) is not None
-assert is_valid_email("example@gmail.com") == True
-assert is_valid_email("Vought@bing.homelander") == False
+assert is_valid_email("example@gmail.com") == True #A email that follows the paramaters of a working email
+assert is_valid_email("Vought@bing.homelander") == False #does not follow the correct paramaters so returns false
